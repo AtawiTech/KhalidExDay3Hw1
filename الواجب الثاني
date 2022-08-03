@@ -1,0 +1,15 @@
+    public static void main(String[] args) {
+        CalculateTax(1000);
+        CalculateTax(600);
+        CalculateTax(300);
+        CalculateTax(100);
+        CalculateTax(60);
+    }
+    public static void CalculateTax(double price){
+        if (price<100 || price>500){
+            System.out.println("the price is outside the given range");
+            return;
+        }
+        double tax= price * 15/100;
+        System.out.println(tax);
+    }}
